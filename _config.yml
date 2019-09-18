@@ -10,14 +10,14 @@ title: I am Sen
 name: Sen
 email: seniscz@gmail.com
 location: shanghai
-#company: VIP
-#company_url: my_company_website
+company: VIP
+company_url: https://www.peilian.com/?utm_source=bdpz_pc&utm_medium=cpc&utm_campaign=%E7%99%BE%E5%BA%A6%E5%93%81%E4%B8%93&utm_term=%E4%B8%BB%E6%A0%87%E9%A2%98&utm_content=%E5%B7%A6%E4%BE%A7
 github_url: https://github.com/seniscz
 github_username: seniscz
 description: 广交朋友，走向生活
 favicon: seniscz.png
 encoding: "utf-8"
-#repository: seniscz/seniscz.github.io/ # ex. DONGChuan/DONGChuan.github.io
+repository: seniscz/seniscz.github.io  # ex. DONGChuan/DONGChuan.github.io
 
 # The base hostname & protocol for your site
 # For local test, please use http://localhost:4000
@@ -48,10 +48,7 @@ defaults: []
 kramdown:
   input: GFM
   enable_coderay: true
-  syntax_highlighter: rouge
 
-syntax_highlighter_opts:
-   coderay_line_numbers:  nil
    
 # Disque
 #disque: my_disque_settings # ex. httpdongchuangithubio.disqus.com
@@ -62,24 +59,6 @@ paginate_path: 'page:num'
 
 
 # Navigation. If you do not like these modules, just remove them
-# top menu list
-menus:
-
-  -
-    href: /link.html
-    label: 友链
-    target: _self
-
-  - href: /life.html
-    label: 生活
-    target: _self
-  
-  -
-    href: /about
-    label: About
-    target: _self
-
-
 # Navigation. main menu list
 
 navs:
@@ -137,6 +116,23 @@ navs:
   label: 数据结构
   target: _self
 
+-
+  href: /about
+  label: About
+
+# top menu list
+menus:
+
+  -
+    href: /link.html
+    label: 友链
+    target: _self
+
+  - href: /life.html
+    label: 生活
+    target: _self
+  
+
 
 # labels. my blog key words
 labels:
@@ -175,10 +171,10 @@ subscribe_rss: /feed.xml
 #side_bar_repo_limit: 4 # Number of repos to show
 
 # Google Analytics
-#analytics :
-  #provider : google
-  #google :
-      #tracking_id : 'tracking_id'  # ex. UA-72165600-X
+analytics :
+  provider : google
+  google :
+    tracking_id : 'tracking_id'  # ex. UA-72165600-X
 
 
 # For about.html. Fell free to create your own!
@@ -189,28 +185,4 @@ skill_mobile_app_keywords: [Android, Sketch UI Desgin]
 
 
 
-# ---------------- #
-#      Comments    #
-# ---------------- #
-# support provider: disqus, gitment, gitalk
-comments_provider: gitalk
-# !!!重要!!! 请修改下面这些信息为你自己申请的
-# !!!Important!!! Please modify infos below to yours
-# https://disqus.com
-disqus:
-    username: ityouknow
-# https://imsun.net/posts/gitment-introduction/
-gitment:
-    owner: ityouknow
-    repo: blog-comments
-    oauth:
-        client_id: 61bfc53d957e74e78f8f
-        client_secret: 31c61e66cdcc9ada8db2267ee779d0bdafac434c
-# https://github.com/gitalk/gitalk#install
-gitalk:
-    owner: ityouknow
-    repo: blog-comments
-    clientID: 61bfc53d957e74e78f8f
-    clientSecret: 31c61e66cdcc9ada8db2267ee779d0bdafac434c
-# 在使用其它评论组件时可点击显示 Disqus
-lazy_load_disqus : true
+
