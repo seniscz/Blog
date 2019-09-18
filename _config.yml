@@ -25,7 +25,7 @@ encoding: "utf-8"
 #url: http://localhost:4000
 
 ## Gem
-plugins:
+gems:
   - jekyll-paginate
   - jekyll-geo-pattern
   - rouge
@@ -44,7 +44,7 @@ destination: ./_site
 
 quiet:    false
 defaults: []
-
+  
 kramdown:
   input: GFM
   enable_coderay: true
@@ -81,6 +81,7 @@ menus:
 
 
 # Navigation. main menu list
+
 navs:
 
 -
@@ -140,20 +141,21 @@ navs:
 # labels. my blog key words
 labels:
 
--
-  href: /flink.html
-  label: Flink
-  target: _self
+  -
+    href: /payment.html
+    label: 支付     
+    target: _self
 
--
-  href: /kudu.html
-  label: Kudu
-  target: _blank
+  -
+    href: /fastdfs.html
+    label: FastDFS
+    target: _blank
 
--
-  href: /open-source.html
-  label: Code
-  target: _blank
+  -
+    href: /mongodb.html
+    label: MongoDB
+    target: _blank
+
 
 
 # selected articles
@@ -178,16 +180,16 @@ classes:
 # ---------------- #
 #       RSS        #
 # ---------------- #
-#subscribe_rss: /feed.xml
+subscribe_rss: /feed.xml
 
 # Sidebar to show popular repo, 侧边显示的是仓库的项目
 #side_bar_repo_limit: 4 # Number of repos to show
 
 # Google Analytics
-analytics :
-  provider : google
-  google :
-      tracking_id : 'tracking_id'  # ex. UA-72165600-X
+#analytics :
+  #provider : google
+  #google :
+      #tracking_id : 'tracking_id'  # ex. UA-72165600-X
 
 
 # For about.html. Fell free to create your own!
@@ -196,3 +198,30 @@ skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
 skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, AngularJS, NodeJS, ExpressJS, MongoDB, Redis, PHP, Symfony, Boostrap]
 skill_mobile_app_keywords: [Android, Sketch UI Desgin]
 
+
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, gitalk
+comments_provider: gitalk
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+# https://disqus.com
+disqus:
+    username: ityouknow
+# https://imsun.net/posts/gitment-introduction/
+gitment:
+    owner: ityouknow
+    repo: blog-comments
+    oauth:
+        client_id: 61bfc53d957e74e78f8f
+        client_secret: 31c61e66cdcc9ada8db2267ee779d0bdafac434c
+# https://github.com/gitalk/gitalk#install
+gitalk:
+    owner: ityouknow
+    repo: blog-comments
+    clientID: 61bfc53d957e74e78f8f
+    clientSecret: 31c61e66cdcc9ada8db2267ee779d0bdafac434c
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : true
