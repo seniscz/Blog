@@ -7,6 +7,7 @@ css: ['index.css', 'sidebar-popular-repo.css']
     <div class="container">
         <h1>{{ site.title }}</h1>
         <div id="jumbotron-meta-info">
+            
             {% if site.location %}
             <span class="meta-info">
                 <span class="octicon octicon-location"></span>
@@ -22,12 +23,6 @@ css: ['index.css', 'sidebar-popular-repo.css']
                 <span class="octicon octicon-mark-github"></span>
                 <a href="{{ site.github_url }}" target="_blank">@{{ site.github_username }}</a>
             </span> {% endif %}
-            <!-- 添加标签 -->
-            {% for nav in site.labels %}
-            <span class="meta-info-index hvr-grow">
-                    <a href="{{ nav.href }}" title="{{ nav.label }}" target="{{ nav.target | default: _self }}">{{ nav.label }}</a>
-                </span>
-            {% endfor %}
         </div>
     </div>
 </section>
@@ -41,7 +36,6 @@ css: ['index.css', 'sidebar-popular-repo.css']
 
             <ol class="post-list">
                 {% for post in paginator.posts %}
-                {% if  post.category != 'gitchat' and post.category != 'geektime' %}
                 <li class="post-list-item">
                     <h2 class="post-list-title">
                         <a class="hvr-underline-from-center" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
@@ -53,7 +47,6 @@ css: ['index.css', 'sidebar-popular-repo.css']
                         <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
                     </p>
                 </li>
-                {% endif %}
                 {% endfor %}
             </ol>
 
