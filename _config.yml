@@ -64,8 +64,8 @@ menus:
     target: _self
 
   - href: /life.html
-      label: 生活
-      target: _self
+    label: 生活
+    target: _self
   -
     href: /about
     label: About
