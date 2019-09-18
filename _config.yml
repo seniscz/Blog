@@ -84,7 +84,10 @@ navs:
     href: /link.html
     label: 友链
     target: _self
-
+  -
+    href: /life.html
+    label: 生活
+    target: _self
 
 # top menu list
 menus:
