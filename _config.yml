@@ -31,7 +31,6 @@ gems:
   - rouge
   - kramdown
   - jekyll-github-metadata
-  
 
 # Build settings
 markdown: kramdown
@@ -51,7 +50,7 @@ kramdown:
 
    
 # Disque
-#disque: my_disque_settings # ex. httpdongchuangithubio.disqus.com
+disque: httpdongchuangithubio.disqus.com # ex. httpdongchuangithubio.disqus.com
 
 # Pagination
 paginate: 5
@@ -60,115 +59,58 @@ paginate_path: 'page:num'
 
 # Navigation. If you do not like these modules, just remove them
 # Navigation. main menu list
-
 navs:
+  -
+    href: /
+    label: Home
 
--
-  href: /
-  label: Home
+  -
+    href: /open-source
+    label: Open-Source
 
--
-  href: /linux.html
-  label: Linux
-  target: _self
-  subnav:
+  -
+    href: /blog
+    label: Blog
 
-    -
-      subHref: /linux_perf_opt.html
-      subLabel: Linux性能优化
-    
-    -
-      subHref: /shell.html
-      subLabel: Shell编程
+  -
+    href: /bookmark
+    label: Bookmark
 
--
-  href: /bigdata.html
-  label: BigData_Ecosphere
-  target: _self
-  subnav:
-
-    -
-      subHref: /flink.html
-      subLabel: Flink
-
-    -
-      subHref: /kudu.html
-      subLabel: KUDU
-
--
-
-  href: http://www.justdojava.com
-  label: Java
-  target: _blank
-  subnav:
-
-    -
-      subHref: /java.html
-      subLabel: Jvm 系列文章
-
-    -
-      subHref: http://www.justdojava.com
-      subLabel: Java 极客技术
-      target: _blank
-
--
-  href: /data_structure.html
-  label: 数据结构
-  target: _self
-
--
-  href: /about
-  label: About
-
-# top menu list
-menus:
-
+  -
+    href: /about
+    label: About
   -
     href: /link.html
     label: 友链
     target: _self
-
-  - href: /life.html
+ -
+    href: /life.html
     label: 生活
     target: _self
-  
 
 
-# labels. my blog key words
-labels:
+# top menu list
+menus:
 
-  -
-    href: /payment.html
-    label: 支付     
+ -
+    href: /link.html
+    label: 友链
+    target: _self
+ -
+    href: /life.html
+    label: 生活
     target: _self
 
-
-# selected articles
-classes:
-
--
-  href: /life.html
-  name: 我的故事
-  describe: 生活就是故事，故事就是生活
-
--
-  href: /arch.html
-  name: 架构师之路
-  describe: 一个架构师的自我修养
-
--
-  href: /java.html
-  name: Java 系列文章
-  describe: Java 之根基，Java 程序员必学
+ 
 
 
 # ---------------- #
 #       RSS        #
 # ---------------- #
-subscribe_rss: /feed.xml
+# subscribe_rss: /feed.xml
 
 # Sidebar to show popular repo, 侧边显示的是仓库的项目
-#side_bar_repo_limit: 4 # Number of repos to show
+# side_bar_repo_limit: 0 # Number of repos to show
 
 # Google Analytics
 analytics :
