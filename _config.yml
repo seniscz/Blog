@@ -16,7 +16,8 @@ github_url: https://github.com/seniscz
 github_username: seniscz
 description: 广交朋友，走向生活
 favicon: seniscz.png
-repository: seniscz/seniscz.github.io/ # ex. DONGChuan/DONGChuan.github.io
+encoding: "utf-8"
+#repository: seniscz/seniscz.github.io/ # ex. DONGChuan/DONGChuan.github.io
 
 # The base hostname & protocol for your site
 # For local test, please use http://localhost:4000
@@ -56,7 +57,7 @@ syntax_highlighter_opts:
 #disque: my_disque_settings # ex. httpdongchuangithubio.disqus.com
 
 # Pagination
-paginate: 10
+paginate: 5
 paginate_path: 'page:num'
 
 
@@ -179,8 +180,8 @@ classes:
 # ---------------- #
 subscribe_rss: /feed.xml
 
-# Sidebar to show popular repo
-side_bar_repo_limit: 6 # Number of repos to show
+# Sidebar to show popular repo, 侧边显示的是仓库的项目
+side_bar_repo_limit: 0 # Number of repos to show
 
 # Google Analytics
 analytics :
