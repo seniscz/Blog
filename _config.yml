@@ -10,8 +10,8 @@ title: I am Sen
 name: Sen
 email: seniscz@gmail.com
 location: shanghai
-company: #
-company_url: my_company_website
+#company: VIP
+#company_url: my_company_website
 github_url: https://github.com/seniscz
 github_username: seniscz
 description: 广交朋友，走向生活
@@ -63,12 +63,13 @@ menus:
     label: 友链
     target: _self
 
-    - href: /life.html
+  - href: /life.html
       label: 生活
       target: _self
   -
     href: /about
     label: About
+    target: _self
 
 # Navigation. main menu list
 navs:
