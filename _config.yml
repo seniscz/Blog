@@ -146,17 +146,6 @@ labels:
     label: 支付     
     target: _self
 
-  -
-    href: /fastdfs.html
-    label: FastDFS
-    target: _blank
-
-  -
-    href: /mongodb.html
-    label: MongoDB
-    target: _blank
-
-
 
 # selected articles
 classes:
