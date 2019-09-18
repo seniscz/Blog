@@ -16,20 +16,21 @@ github_url: https://github.com/seniscz
 github_username: seniscz
 description: 广交朋友，走向生活
 favicon: seniscz.png
-repository: github_username/github_username.github.io # ex. DONGChuan/DONGChuan.github.io
+repository: seniscz/seniscz.github.io/ # ex. DONGChuan/DONGChuan.github.io
 
 # The base hostname & protocol for your site
 # For local test, please use http://localhost:4000
 # For production, use your github page url. ex. http://dongchuan.github.io
-url: http://localhost:4000
+#url: http://localhost:4000
 
 ## Gem
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-geo-pattern
   - rouge
   - kramdown
   - jekyll-github-metadata
+  
 
 # Build settings
 markdown: kramdown
@@ -46,13 +47,18 @@ defaults: []
 kramdown:
   input: GFM
   enable_coderay: true
+  syntax_highlighter: rouge
 
+syntax_highlighter_opts:
+   coderay_line_numbers:  nil
+   
 # Disque
-disque: my_disque_settings # ex. httpdongchuangithubio.disqus.com
+#disque: my_disque_settings # ex. httpdongchuangithubio.disqus.com
 
 # Pagination
 paginate: 10
 paginate_path: 'page:num'
+
 
 # Navigation. If you do not like these modules, just remove them
 # top menu list
