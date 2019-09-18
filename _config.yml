@@ -178,10 +178,10 @@ classes:
 # ---------------- #
 #       RSS        #
 # ---------------- #
-subscribe_rss: /feed.xml
+#subscribe_rss: /feed.xml
 
 # Sidebar to show popular repo, 侧边显示的是仓库的项目
-side_bar_repo_limit: 0 # Number of repos to show
+#side_bar_repo_limit: 4 # Number of repos to show
 
 # Google Analytics
 analytics :
